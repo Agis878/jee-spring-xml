@@ -12,11 +12,7 @@ public class App
                 new ClassPathXmlApplicationContext("beans.xml");
 
         HelloWorld hw1 = context.getBean("helloWorld", HelloWorld.class);
-
-
-
-
-
+        hw1.printMessage();
 
 
         context.close();
