@@ -6,6 +6,10 @@
     <bean id="helloWorld" class="pl.coderslab.beans.HelloWorld">
         <constructor-arg value="Witaj CL"/>
     </bean>
+    <bean id="messageService" class="pl.coderslab.beans.EmailService">
+         <property name="message" value="Witaj Agnieszka" />
+    </bean>
+
 
 
 </beans>
