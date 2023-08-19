@@ -1,13 +1,24 @@
 package pl.coderslab;
 
-/**
- * Hello world!
- *
- */
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import pl.coderslab.beans.HelloWorld;
+
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        ClassPathXmlApplicationContext context =
+                new ClassPathXmlApplicationContext("beans.xml");
+
+        HelloWorld hw1 = context.getBean("helloWorld", HelloWorld.class);
+
+
+
+
+
+
+
+        context.close();
     }
 }
